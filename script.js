@@ -70,7 +70,7 @@ function generatePassword() {
     }
     var retVal = "";
     for (var i = 0, n = passLen; i < passLen; ++i) {
-        retVal += finalChars.charAt(Math.floor(Math.random() * n));
+        retVal += finalChars.charAt(Math.floor(Math.random() * finalChars.length));
     }
     return retVal;
   
